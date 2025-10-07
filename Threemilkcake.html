@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three Milk Cake</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body class="overflow-x-hidden">
+   <header class="w-full bg-white shadow sticky top-0 z-50">
+        <nav class="flex items-center justify-between px-4 py-2 lg:px-8 lg:py-2">
+            
+            <!-- Left side -->
+            <div class="flex items-center gap-4">
+                <!-- Mobile hamburger -->
+                <div class="lg:hidden">
+                    <label for="menu-toggle" class="text-xl text-[#333333] cursor-pointer">
+                        <i class="fa-solid fa-bars"></i>
+                    </label>
+                </div>
+                
+                <!-- Desktop button -->
+                <div class="hidden lg:block">
+                    <button class="bg-[#b89a67] text-sm md:text-base text-white px-5 md:px-8 py-1.5 md:py-2 rounded-full font-medium">
+                        Select Location
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Center nav (desktop menu + logo) -->
+            <div class="hidden lg:flex items-center gap-8 flex-1 justify-center">
+                <!-- Left nav -->
+                <div class="flex gap-5 text-sm">
+                    <div class="relative group">
+                        <a href="./index.html" class="flex items-center gap-1 text-[#333333] hover:text-[#777777] transition">
+                            Home <i class="fa-solid fa-angle-down text-xs text-[#55555573]"></i>
+                        </a>
+                        <div class="absolute invisible opacity-0 group-hover:opacity-100 group-hover:visible bg-white  mt-4 w-[750px] z-50 text-center px-6 py-4 transition-all duration-300">
+                            <h1 class="font-serif font-bold text-3xl text-gray-900 mb-4">
+                                Bestselling <span class="text-[#b09c6d]">Products</span>
+                            </h1>
+                            <div class="grid grid-cols-4 gap-4 mt-4">
+                                <div class="overflow-hidden">
+                                    <img src="./images/Three-Milk-Cake-768x768.jpg" alt="Three Milk Cake" class="w-full object-cover">
+                                    <div>
+                                        <h4 class="font-semibold text-base font-serif text-[#333333] hover:text-[#B09C6D] mt-2">
+                                            <a href="./Threemilkcake.html">Three Milk Cake</a>
+                                        </h4>
+                                        <p class="mt-2 font-semibold text-base text-[#b09c6d]">Rs 2,200</p>
+                                    </div>
+                                </div>
+
+                                <div class="overflow-hidden">
+                                    <img src="./images/Pistachio Tres Leches Sundae.jpg" alt="Pistachio Tres Leches Sundae" class="w-full object-cover">
+                                    <div>
+                                        <h3 class="font-semibold text-base font-serif text-[#333333] hover:text-[#B09C6D] mt-2">
+                                            <a href="./pistachiosundae.html">Pistachio Tres Leches Sundae</a>
+                                        </h3>
+                                        <p class="mt-2 font-semibold text-base text-[#b09c6d]">Rs 520</p>
+                                    </div>
+                                </div>
+
+                                <div class="overflow-hidden">
+                                    <img src="./images/Lotus.jpg" alt="Lotus Cake" class="w-full object-cover">
+                                    <div>
+                                        <h4 class="font-semibold text-base font-serif text-[#333333] hover:text-[#B09C6D] mt-2">
+                                            <a href="./LotusCake.html">Lotus Cake</a>
+                                        </h4>
+                                        <p class="mt-2 font-semibold text-base text-[#b09c6d]">Rs 2,900</p>
+                                    </div>
+                                </div>
+
+                                <div class="overflow-hidden">
+                                    <img src="./images/Lotus-cheesecake-9-768x768.jpg" alt="Lotus Cheese Cake" class="w-full object-cover">
+                                    <div>
+                                        <h4 class="font-semibold text-base font-serif text-[#333333] hover:text-[#B09C6D] mt-2">
+                                            <a href="./LotusCheeseCake.html">Lotus Cheese Cake</a>
+                                        </h4>
+                                        <p class="mt-2 font-semibold text-base text-[#b09c6d]">Rs 450</p>
+                                    </div>
+                                </div>
+
+                                <div class="overflow-hidden">
+                                    <img src="./images/Red-Velvet-Cupcake-768x768.jpg" alt="Red Velvet Cupcake" class="w-full object-cover">
+                                    <div>
+                                        <h4 class="font-semibold text-base font-serif text-[#333333] hover:text-[#B09C6D] mt-2">
+                                            <a href="./redvelvetcupcake.html">Red Velvet Cupcake</a>
+                                        </h4>
+                                        <p class="mt-2 font-semibold text-base text-[#b09c6d]">Rs 250</p>
+                                    </div>
+                                </div>
+
+                                <div class="overflow-hidden">
+                                    <img src="./images/Apple-pie-1-768x768.jpg" alt="Apple Cup Pie" class="w-full object-cover">
+                                    <div>
+                                        <h4 class="font-semibold text-base font-serif text-[#333333] hover:text-[#B09C6D] mt-2">
+                                            <a href="./Applecuppie.html">Apple Cup Pie</a>
+                                        </h4>
+                                        <p class="mt-2 font-semibold text-base text-[#b09c6d]">Rs 300</p>
+                                    </div>
+                                </div>
+
+                                <div class="overflow-hidden">
+                                    <img src="./images/Hazelnut-Parfait.jpg" alt="Hazelnut Parfait" class="w-full object-cover">
+                                    <div>
+                                        <h4 class="font-semibold text-base font-serif text-[#333333] hover:text-[#B09C6D] mt-2">
+                                            <a href="./hazelnutparfait.html">Hazelnut-Parfait</a>
+                                        </h4>
+                                        <p class="mt-2 font-semibold text-base text-[#b09c6d]">Rs 520</p>
+                                    </div>
+                                </div>
+
+                                <div class="overflow-hidden">
+                                    <img src="./images/Swiss-dark-chocolate-9-768x768.jpg" alt="Swiss Dark Chocolate Cupcake" class="w-full object-cover">
+                                    <div>
+                                        <h3 class="font-semibold text-base font-serif text-[#333333] hover:text-[#B09C6D] mt-2">
+                                            <a href="./SwissDarkCupcake.html">Swiss Dark Chocolate Cupcake</a>
+                                        </h3>
+                                        <p class="mt-2 font-semibold text-base text-[#b09c6d]">Rs 250</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="relative group">
+                        <a href="./Menu.html" class="flex items-center gap-1 text-[#333333] hover:text-[#777777] transition">
+                        Menu <i class="fa-solid fa-angle-down text-xs text-[#55555573]"></i>
+                    </a>
+                        <div class="absolute invisible opacity-0 group-hover:opacity-100 group-hover:visible bg-white  mt-4 w-[700px] left-0 z-50 text-center px-12 py-6 transition-all duration-300">
+                            <h1 class="font-serif font-bold text-3xl text-gray-900 mb-4">
+                                Product <span class="text-[#b09c6d]">Categories</span>
+                            </h1>
+                            <div class="grid grid-cols-4 gap-4 mt-4">
+                                <div class="overflow-hidden">
+                                    <img src="./images/Lotus.jpg" alt="Cake" class="w-full object-cover">
+                                    <div>
+                                        <h4 class="font-semibold text-base font-serif text-[#333333] hover:text-[#B09C6D] mt-2">
+                                            <a href="#">Cake</a>
+                                        </h4>
+                                        <p class="mt-1 text-base text-gray-400">25 Products</p>
+                                    </div>
+                                </div>
+
+                                <div class="overflow-hidden">
+                                    <img src="./images/Nutella-Brownie-768x768.jpg" alt="Brownies" class="w-full object-cover">
+                                    <div>
+                                        <h4 class="font-semibold text-base font-serif text-[#333333] hover:text-[#B09C6D] mt-2">
+                                            <a href="#">Brownies</a>
+                                        </h4>
+                                        <p class="mt-1 text-base text-gray-400">6 Products</p>
+                                    </div>
+                                </div>
+
+                                <div class="overflow-hidden">
+                                    <img src="./images/Lotus-cheesecake-9-768x768.jpg" alt="Desserts" class="w-full object-cover">
+                                    <div>
+                                        <h4 class="font-semibold text-base font-serif text-[#333333] hover:text-[#B09C6D] mt-2">
+                                            <a href="#">Desserts</a>
+                                        </h4>
+                                        <p class="mt-1 text-base text-gray-400">9 Products</p>
+                                    </div>
+                                </div>
+
+                                <div class="overflow-hidden">
+                                    <img src="./images/Swiss-dark-chocolate-9-768x768.jpg" alt="Cupcakes" class="w-full object-cover">
+                                    <div>
+                                        <h4 class="font-semibold text-base font-serif text-[#333333] hover:text-[#B09C6D] mt-2">
+                                            <a href="#">Cupcakes</a>
+                                        </h4>
+                                        <p class="mt-1 text-base text-gray-400">21 Products</p>
+                                    </div>
+                                </div>
+
+                                <div class="overflow-hidden">
+                                    <img src="./images/nutella-sundae-copy.jpg" alt="Sundae" class="w-full object-cover">
+                                    <div>
+                                        <h4 class="font-semibold text-base font-serif text-[#333333] hover:text-[#B09C6D] mt-2">
+                                            <a href="#">Sundae</a>
+                                        </h4>
+                                        <p class="mt-1 text-base text-gray-400">9 Products</p>
+                                    </div>
+                                </div>
+
+                                <div class="overflow-hidden">
+                                    <img src="./images/Nutella-Filled2-768x768.jpg" alt="Cookies" class="w-full object-cover">
+                                    <div>
+                                        <h4 class="font-semibold text-base font-serif text-[#333333] hover:text-[#B09C6D] mt-2">
+                                            <a href="#">Cookies</a>
+                                        </h4>
+                                        <p class="mt-1 text-base text-gray-400">8 Products</p>
+                                    </div>
+                                </div>
+
+                                <div class="overflow-hidden">
+                                    <img src="./images/Mini-Donut-768x768.jpg" alt="Mini Donuts" class="w-full object-cover">
+                                    <div>
+                                        <h4 class="font-semibold text-base font-serif text-[#333333] hover:text-[#B09C6D] mt-2">
+                                            <a href="#">Mini Donuts</a>
+                                        </h4>
+                                        <p class="mt-1 text-base text-gray-400">22 Products</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="relative group">
+                        <a href="./Aboutus.html" class="flex items-center gap-1 text-[#333333] hover:text-[#777777] transition">
+                            About Us <i class="fa-solid fa-angle-down text-xs text-[#55555573]"></i>
+                        </a>
+                        <div class="absolute invisible opacity-0 group-hover:opacity-100 group-hover:visible bg-white  mt-4 w-[700px] left-0 z-50 text-center px-12 py-6 transition-all duration-300">
+                            <div class="grid grid-cols-4 gap-6 mt-4">
+                                <div class="overflow-hidden">
+                                    <img src="./images/1.jpg" alt="Dip into dice" class="w-full object-cover">
+                                </div>
+                                <div class="overflow-hidden">
+                                    <img src="./images/2.jpg" alt="Video Catalogue" class="w-full object-cover">
+                                </div>
+                                <div class="overflow-hidden col-span-2">
+                                    <h2 class="text-3xl font-serif font-semibold mb-2">
+                                        <span class="text-[#b09c6d]">Layers </span>
+                                        <span class="text-[#242424]">Bakeshop</span>
+                                    </h2>
+                                    <p class="mb-2 text-gray-600 text-base">
+                                        Like a fantasy that feels unreal, every delicacy by ‘Layers’ holds a charm that enchants with every bite,
+                                        allowing one to be swept into a moment of bliss, making all your dessert dreams come true!
+                                    </p>
+                                    <p class="mb-2 text-gray-600 text-base">
+                                        Founded in Lahore in 2020, the philosophy of Layers Bakeshop was simple; 
+                                        to create connections through desserts while striking the ideal balance between flavor and feeling.
+                                    </p>
+                                    <p class="mb-2 text-gray-600 text-base">
+                                        Since the beginning, Layers has secured an irreplaceable spot in the hearts of people.
+                                    </p>   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Logo -->
+                <div class="text-center">
+                    <img src="./images/Layers-Logo (1).png" alt="Layers-Logo" class="h-8 mx-auto">
+                </div>
+                
+                <!-- Right nav -->
+                <div class="flex gap-5 text-sm">
+                    <div class="relative group">
+                        <p class="flex items-center gap-1 text-[#333333] hover:text-[#777777] transition">
+                            Social Media <i class="fa-solid fa-angle-down text-xs text-[#55555573]"></i>
+                        </p>
+                        <!-- Dropdown Box -->
+                        <div class="absolute invisible opacity-0 group-hover:opacity-100 group-hover:visible bg-white  mt-3 w-80 left-0 z-50 text-center p-4 transition-all duration-300">
+                            <h3 class="font-serif font-bold text-lg text-gray-900 mb-4">
+                                Follow Us On <span class="text-[#b09c6d]">Social Media</span>
+                            </h3>
+                            <div class="flex justify-center items-center gap-4">
+                                <a href="https://www.facebook.com/layers.bakeshopp/" target="_blank" class="hover:scale-105 transition-transform">
+                                    <img src="./images/FB (1).jpg" alt="Facebook" class="w-20 h-20 rounded-md">
+                                </a>
+                                <a href="https://www.instagram.com/layers.bakeshop" target="_blank" class="hover:scale-105 transition-transform">
+                                    <img src="./images/IG (1).jpg" alt="Instagram" class="w-20 h-20 rounded-md">
+                                </a>
+                                <a href="https://www.youtube.com/channel/UCh6oQJUBrMY_s5se30zjZpg" target="_blank" class="hover:scale-105 transition-transform">
+                                    <img src="./images/YT2 (1).jpg" alt="YouTube" class="w-20 h-20 rounded-md">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="./Orders.html" class="text-[#333333] hover:text-[#777777] transition">Orders</a>
+                    <a href="./ContactUs.html" class="text-[#333333] hover:text-[#777777] transition">Contact Us</a>
+                </div>
+            </div>
+            
+            <!-- Right icons -->
+            <div class="flex items-center gap-3 md:gap-4 text-base md:text-lg text-[#333333]">
+                
+                <!-- Desktop only icons -->
+                <div class="cursor-pointer hover:text-[#777777] hidden lg:block">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <label for="user-toggle" class="relative cursor-pointer hover:text-[#777777]">
+                    <i class="fa-regular fa-user"></i>
+                </label>
+                <div class="relative cursor-pointer hover:text-[#777777] hidden lg:block">
+                    <a href="./Wishlist.html">
+                    <i class="fa-regular fa-heart"></i></a>
+                    <span class="absolute -top-2 -right-3 bg-[#b89a67] text-white text-xs rounded-full px-1.5">0</span>
+                </div>
+                
+                <!-- Cart always visible -->
+                 <label for="cart-toggle" class="relative cursor-pointer hover:text-[#777777]">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="absolute -top-2 -right-3 bg-[#b89a67] text-white text-xs rounded-full px-1.5">0</span>
+                </label>
+            </div>
+        </nav>
+    </header>
+    
+    <!-- Hidden checkbox for toggling -->
+    <input type="checkbox" id="menu-toggle" class="hidden peer">
+    <input type="checkbox" id="cart-toggle" class="hidden peer/cart">
+    <input type="checkbox" id="user-toggle" class="hidden peer/user">
+
+    <!-- Overlay -->
+    <div class="fixed inset-0 bg-black bg-opacity-50 hidden peer-checked:block z-40"></div>
+    <!-- CART OVERLAY -->
+    <div class="fixed inset-0 bg-black bg-opacity-40 hidden peer-checked/cart:flex justify-end z-40"></div>
+    <!-- User OVERLAY -->
+    <div class="fixed inset-0 bg-black bg-opacity-40 hidden peer-checked/user:flex justify-end z-40"></div>
+    
+    <!-- Sidebar -->
+    <div class="fixed top-0 left-0 h-full w-64 bg-white shadow-lg -translate-x-full peer-checked:translate-x-0 transition-transform duration-300 z-50 p-5">
+        <label for="menu-toggle" class="absolute top-4 right-4 text-xl cursor-pointer text-[#333333]">
+            <i class="fa-solid fa-xmark"></i>
+        </label>
+        
+        <!-- Sidebar logo -->
+        <div class="mb-5 flex justify-center">
+            <img src="./images/Layers-Logo (1).png" alt="Layers-Logo" class="h-7">
+        </div>
+        
+        <input type="text" placeholder="Search for products" class="w-full px-3 py-2 border rounded mb-4 text-sm">
+        
+        <ul class="space-y-3 text-sm">
+            <li><a href="./index.html" class="block text-[#333333] hover:text-[#777777]">Home</a></li>
+            <hr class="mb-2">
+            <li><a href="./Menu.html" class="block text-[#333333] hover:text-[#777777]">Menu</a></li>
+            <hr class="mb-2">
+            <li><a href="./Aboutus.html" class="block text-[#333333] hover:text-[#777777]">About Us</a></li>
+            <hr class="mb-2">
+            <li><a href="#" class="block text-[#333333] hover:text-[#777777]">Social Media</a></li>
+            <hr class="mb-2">
+            <li><a href="#" class="block text-[#333333] hover:text-[#777777]">Video Catalogue</a></li>
+            <hr class="mb-2">
+            <li><a href="#" class="block text-[#333333] hover:text-[#777777]">Track Order</a></li>
+            <hr class="mb-2">
+            <li><a href="./ContactUs.html" class="block text-[#333333] hover:text-[#777777]">Contact Us</a></li>
+            <hr class="mb-2">
+            <li><a href="./Wishlist.html" class="block text-[#333333] hover:text-[#777777]"><i class="fa-regular fa-heart"></i> Wishlist</a></li>
+            <hr class="mb-2">
+            <li><a href="./MyAccount.html" class="block text-[#333333] hover:text-[#777777]"><i class="fa-regular fa-user"></i> Login / Register</a></li>
+            <hr class="mb-2">
+        </ul>
+        
+        <div class="mt-5">
+            <p class="font-semibold text-sm">Archives</p>
+            <br>
+            <p class="text-xs text-gray-500">No archives to show.</p>
+        </div>
+        
+        <div class="mt-3">
+            <p class="font-semibold text-sm">Categories</p>
+            <br>
+            <p class="text-xs text-gray-500">No categories</p>
+        </div>
+    </div>    
+    <!-- CART SIDEBAR -->
+    <div class="fixed top-0 right-0 h-full w-80 bg-white shadow-lg translate-x-full peer-checked/cart:translate-x-0 transition-transform duration-300 z-50 p-4 flex flex-col">
+        <label for="cart-toggle" class="absolute top-4 right-4 text-xl cursor-pointer text-gray-600 hover:text-gray-800">
+            <i class="fa-solid fa-xmark"></i>
+        </label>
+        <h2 class="text-2xl font-serif text-gray-800 mb-4 mt-4">Shopping Cart</h2>
+        <hr class="mb-8">
+        <div class="px-2">
+            <div class="text-gray-800 font-semibold text-base text-center">
+                <i class="fa-solid fa-cart-shopping text-gray-300 text-5xl mb-4"></i>
+                <p class="mb-3">No products in the cart.</p>
+                <button class="bg-[#b09c6d] hover:bg-[#8e7d57] text-white px-3 py-2 mb-4">Return to shop</button>
+            </div>
+            <div class="text-[#777777] text-base">
+                <p>You must have an order with a minimum of 
+                    <span class="font-bold text-[#B09C6D]">Rs 1,000</span>to place your order, your current order total is 
+                    <span class="font-bold text-[#B09C6D]">Rs 0</span>.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- User SIDEBAR -->
+    <div class="fixed top-0 right-0 h-full w-80 bg-white shadow-lg translate-x-full peer-checked/user:translate-x-0 transition-transform duration-300 z-50 p-4 flex flex-col">
+        <label for="user-toggle" class="absolute top-4 right-4 text-xl cursor-pointer text-gray-600 hover:text-gray-800">
+            <i class="fa-solid fa-xmark"></i>
+        </label>
+        <h2 class="text-2xl font-serif text-gray-800 mb-4 mt-4">Sign in</h2>
+        <hr class="mb-8">
+        <form class="space-y-6">
+            <div>
+                <label class="block text-sm font-medium text-gray-700 mb-1">
+                    Username or email address <span class="text-red-500">*</span>
+                </label>
+                <input type="text" class="w-full px-4 py-2 border border-gray-300 rounded bg-gray-100"/>
+            </div>
+                
+            <div>
+                <label class="block text-sm font-medium text-gray-700 mb-1">
+                    Password <span class="text-red-500">*</span>
+                </label>
+                <input type="password" class="w-full px-4 py-2 border border-gray-300 rounded bg-gray-100"/>
+            </div>
+                
+            <div class="flex items-center justify-between">
+                <label class="inline-flex items-center">
+                    <input type="checkbox" class="form-checkbox"/>
+                    <span class="ml-2 text-sm text-gray-700">Remember me</span>
+                </label>
+                <a href="#" class="text-sm text-[#b39b69] hover:text-[#a07f38] font-semibold">Lost your password?</a>
+            </div>
+                
+            <button type="submit" class="bg-[#b09c6d] hover:bg-[#8e7d57] text-white px-6 py-2 font-semibold">
+                Log in
+            </button>
+        </form>
+        <br>
+        <hr class="mb-8">
+        <div class="text-gray-800 font-semibold text-base text-center">
+            <i class="fa-regular fa-user text-gray-300 text-5xl mb-4"></i>
+            <p class="mb-3">No Account yet?</p>
+            <button class="bg-[#b09c6d] hover:bg-[#8e7d57] text-white px-2 py-1 mb-4">Create an Account</button>
+         </div>
+        <hr class="mb-8">
+    </div>
+    
+    <section class="relative w-full h-[200px] overflow-hidden">
+      <div class="absolute inset-0">
+        <img src="./images/menubanner.jpg" alt="Cake" class="w-full h-full object-cover">
+      </div>
+      
+      <div class="relative z-10 flex flex-col items-center justify-center h-[250px] text-center text-white px-4">
+        <h1 class="text-3xl sm:text-4xl md:text-5xl font-serif mb-2">Three Milk Cake</h1>
+    </section>
+    <div class="max-w-7xl mx-auto p-6 flex justify-between items-center">
+          <div class="text-sm text-gray-900">
+            <a href="./Home.html" class="font-semibold hover:text-[#a5a5a5]">Home</a>
+            <span class="mx-2 text-[#a5a5a5]">/</span>
+            <a href="./Menu.html" class="font-semibold hover:text-[#a5a5a5]">Menu</a>
+            <span class="mx-2 text-[#a5a5a5]">/</span>
+            <a href="./Cakes.html" class="font-semibold hover:text-[#a5a5a5]">Cakes</a>
+            <span class="mx-2 text-[#a5a5a5]">/</span>
+            <span class="text-[#a5a5a5]">Three Milk Cake</span>
+          </div>
+    </div>
+
+    <section class="w-full flex flex-col lg:flex-row items-center lg:items-start gap-8 px-6 bg-white">
+  <!-- Left: Cake Image -->
+  <div class="w-full lg:w-1/2">
+    <img src="./images/Three-Milk-Cake-768x768.jpg" alt="Three milk cake" class="w-full h-auto">
+  </div>
+
+  <!-- Right: Cake Details -->
+  <div class="w-full lg:w-1/2 flex flex-col justify-center">
+    <!-- Title -->
+    <a href="./Threemilkcake.html" class="text-2xl font-serif text-[#242424] mb-4 hover:text-[#b89a67]">
+      Three Milk Cake
+    </a>
+
+    <!-- Price -->
+      <span class="text-xl font-semibold text-[#b09c6d] mb-4">Rs 2,200</span>
+
+    <!-- Description -->
+    <p class="text-base text-[#777777] mb-5">
+      Vanilla sponge cake soaked in three kinds of milk — Whole milk, Evaporated milk, and Condensed milk!
+    </p>
+
+    <!-- Price and Buttons -->
+    <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+      <!-- Quantity and Cart Buttons -->
+      <div class="flex items-center gap-2">
+        <button class="border-none p-2 text-base cursor-pointer text-[#777777]">-</button>
+        <input type="text" value="1" class="w-8 h-8 text-center bg-gray-200 text-gray-700 rounded-full p-1 focus:outline-none border-none">
+        <button class="border-none p-2 text-base cursor-pointer text-[#777777]">+</button>
+        <button class="bg-[#b09c6d] hover:bg-[#8e7d57] text-white border-none px-4 py-2 text-xs font-semibold cursor-pointer transition-colors duration-300">
+          Add to cart
+        </button>
+      </div>
+    </div>
+    <a href="#" class="py-4 text-sm text-gray-700 hover:text-[#777777]">
+        <i class="fa-regular fa-heart"></i>
+        <span class="font-semibold">Add to Wishlist</span>
+    </a>
+    <hr class="border-t border-gray-300 mt-3">
+    <div class="mt-3 text-sm">
+      <span class="text-black font-semibold">SKU:</span>
+      <span class="text-[#777777]">DR-21019</span>
+    </div>
+    <div class="mt-3 text-sm">
+      <span class="text-black font-semibold">Category:</span>
+      <span class="text-[#777777]">Cakes</span>
+    </div>
+    <div class="mt-3 text-sm space-x-2">
+      <span class="text-black font-semibold">Share:</span>
+      <a href="https://www.facebook.com/layers.bakeshopp/" class="social-icon">
+        <i class="fa-brands fa-facebook text-[#777777]"></i>
+      </a>
+      <a href="https://www.instagram.com/layers.bakeshop" class="social-icon">
+        <i class="fa-brands fa-square-instagram text-[#777777]"></i>
+      </a>
+      <a href="https://www.youtube.com/channel/UCh6oQJUBrMY_s5se30zjZpg" class="social-icon">
+        <i class="fa-brands fa-youtube text-[#777777]"></i>
+      </a>
+    </div>
+  </div>
+</section>
+<section class="p-6 w-full">
+  <h2>Additional Information</h2>
+  <hr class="border-t border-gray-300 mt-3">
+  <div class="flex justify-center">
+    <table class="text-center">
+      <tr>
+        <td class="px-16 py-4 font-medium text-black">Weight</td>
+        <td class="px-16 py-4 text-gray-600">2.5 LBS</td>
+      </tr>
+    </table>
+  </div>
+</section>
+
+<div class="font-serif font-semibold text-gray-800 px-6 py-6 text-2xl">
+    <p>Related products</p>
+</div>
+
+<div class="grid grid-cols-1 lg:grid-cols-4 gap-6 px-6">
+  <div class="hidden lg:block overflow-hidden">
+    <img src="./images/Lotus-Three-Milk-Cake.jpeg" alt="Lotus Three Milk Cake" class="w-full h-auto object-cover">
+    <div>
+      <h2 class="font-semibold text-lg font-serif text-[#242424] hover:text-[#B09C6D] mt-2">
+        <a href="LotusThreeMilkCake">Lotus Three Milk Cake</a>
+      </h2>
+      <p class="text-sm mt-2 text-gray-500">
+        Lotus biscoff spread on top with cream cheese and a fluffy vanilla milky sponge with lotus crumbs on sides.
+      </p>
+      <div class="flex justify-between items-center mt-2">
+        <p class="font-semibold text-lg text-[#b09c6d]">Rs 3,200</p>
+        <div class="flex items-center gap-2 mt-2">
+          <button class="bg-[#b09c6d] hover:bg-[#8e7d57] text-white border-none px-4 py-2 text-xs font-semibold">
+            Add to cart
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="overflow-hidden">
+    <img src="./images/Nuts-Fusion-Cake.jpg" alt="Nuts-Fusion-Cake" class="w-full h-auto object-cover">
+    <div>
+      <h2 class="font-semibold text-lg font-serif text-[#242424] hover:text-[#B09C6D] mt-2">
+        <a href="NutsFusionCake.html">Nuts Fusion Cake</a>
+      </h2>
+      <p class="text-sm mt-2 text-gray-500">
+        Traditional Carrot Cake Infused with Nutmeg, Cinnamon, Walnuts in the Sponge, 
+        Cashew Nut & Pistachio Chunks Spreadover the Soft Cream Cheese icing Layers
+      </p>
+      <div class="flex justify-between items-center mt-2">
+        <p class="font-semibold text-lg text-[#b09c6d]">Rs 3,000</p>
+        <div class="flex items-center gap-2 mt-2">
+          <button class="bg-[#b09c6d] hover:bg-[#8e7d57] text-white border-none px-4 py-2 text-xs font-semibold">
+            Add to cart
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hidden lg:block overflow-hidden">
+    <img src="./images/Honey-Cake.jpg" alt="Honey-Cake" class="w-full h-auto object-cover">
+    <div>
+      <h2 class="font-semibold text-lg font-serif text-[#242424] hover:text-[#B09C6D] mt-2">
+        <a href="HoneyCake.html">Honey Cake</a>
+      </h2>
+      <p class="text-sm mt-2 text-gray-500">
+        7 layers of soft, Caramelized honey cakes sandwiched between a cloud like burnt honey 
+        & Dulce De Leche whipped cream!
+      </p>
+      <div class="flex justify-between items-center mt-2">
+        <p class="font-semibold text-lg text-[#b09c6d]">Rs 2,400</p>
+        <div class="flex items-center gap-2 mt-2">
+          <button class="bg-[#b09c6d] hover:bg-[#8e7d57] text-white border-none px-4 py-2 text-xs font-semibold">
+            Add to cart
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hidden lg:block overflow-hidden">
+    <img src="./images/Milky-Malt.jpg" alt="Milky-Malt-cake" class="w-full h-auto object-cover">
+    <div>
+      <h2 class="font-semibold text-lg font-serif text-[#242424] hover:text-[#B09C6D] mt-2">
+        <a href="MilkyMalt.html">Milky Malt Cake</a>
+      </h2>
+      <p class="text-sm mt-2 text-gray-500">
+        Imported malt blended with premium cocoa & fresh cream!
+      </p>
+      <div class="flex justify-between items-center mt-2">
+        <p class="font-semibold text-lg text-[#b09c6d]">Rs 1,700</p>
+        <div class="flex items-center gap-2 mt-2">
+          <button class="bg-[#b09c6d] hover:bg-[#8e7d57] text-white border-none px-4 py-2 text-xs font-semibold">
+            Add to cart
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="relative text-center text-gray-800 text-3xl pt-16">
+    <div class="container mx-auto px-4">
+        <div class="flex flex-col items-center justify-center space-y-4">
+            <p class="text-sm font-medium text-[#777777]">
+                © 2025 
+                <span class="text-[#b09c6d]">Layers Bakeshop </span>| Powered by 
+                <a href="https://matzsolutions.com/" class="font-bold underline text-[#242424]">MATZ Solutions</a>
+            </p>
+
+            <div class="flex space-x-3">
+              <a href="https://www.facebook.com/layers.bakeshopp/" class="social-icon">
+                <i class="fa-brands fa-facebook text-[#b09c6d]"></i>
+              </a>
+              <a href="https://www.instagram.com/layers.bakeshop" class="social-icon">
+                <i class="fa-brands fa-square-instagram text-[#b09c6d]"></i>
+              </a>
+              <a href="https://www.youtube.com/channel/UCh6oQJUBrMY_s5se30zjZpg" class="social-icon">
+                <i class="fa-brands fa-youtube text-[#b09c6d]"></i>
+              </a>
+            </div>
+        </div>
+
+        <div class="flex w-full items-end">
+            <div class="w-full flex justify-end">
+              <img src="./images/background3.png" alt="Decorative Footer Left" class="w-full h-auto">
+            </div>
+        </div>
+      </div>
+    </footer>
+
+    <footer class="fixed bottom-0 left-0 w-full bg-white shadow md:hidden flex justify-around py-2">
+        <a href="#" class="flex flex-col items-center text-gray-700 text-sm">
+            <i class="fa-solid fa-phone"></i>
+            <span>Call Now</span>
+        </a>
+        
+        <a href="./Menu.html" class="flex flex-col items-center text-gray-700 text-sm">
+            <i class="fa-solid fa-store"></i>
+            <span>Shop</span>
+        </a>
+        
+        <a href="./Wishlist.html" class="flex flex-col items-center text-gray-700 text-sm">
+            <i class="fa-regular fa-heart"></i>
+            <span>Wishlist</span>
+        </a>
+
+        <label for="cart-toggle" class="flex flex-col items-center text-gray-700 text-sm relative">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span>Cart</span>
+            <span class="absolute -top-2 -right-3 bg-[#b89a67] text-white text-xs rounded-full px-1.5">0</span>
+        </label>
+        <label for="user-toggle" class="relative flex flex-col items-center text-gray-700 text-sm">
+            <i class="fa-regular fa-user"></i>
+            <span>Account</span>
+        </label>
+    </footer>
+</body>
+</html>
